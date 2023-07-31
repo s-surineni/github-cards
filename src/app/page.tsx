@@ -4,10 +4,16 @@ import React from 'react';
 
  class App extends React.Component {
     render() {
-        return <div className="header">Hello2</div>;
+        return <div className="header">{this.props.title}</div>;
     }
 }
-export default App;
+
+class MainApp extends React.Component {
+    render() {
+        return <App title="The Github Cards App" />
+    }
+}
+export default MainApp;
 // import Image from 'next/image'
 
 // export default function Home() {
